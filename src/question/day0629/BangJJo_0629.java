@@ -14,6 +14,7 @@ public class BangJJo_0629 {
         System.out.println("eng "+ eng);
         System.out.println("sum "+ sum);
         System.out.println("avg "+ avg);
+    
     }
  
 }
