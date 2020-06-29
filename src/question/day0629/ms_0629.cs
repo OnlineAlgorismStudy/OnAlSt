@@ -2,7 +2,7 @@
 
 namespace algorithm_01
 {
-    class Program
+    class ms_0629
     {
         static void Main(string[] args)
         {
