@@ -1,5 +1,0 @@
-print ("kor 90")
-print ("mat 80")
-print ("eng 100")
-print ("sum", str(sum([90 +80 +100])))
-print ("avg", str(sum([(90+80+100)/3])))
