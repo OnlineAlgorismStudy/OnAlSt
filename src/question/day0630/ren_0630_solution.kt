@@ -1,8 +1,6 @@
-fun calculator(v : Int , v1 : Int) : Unit{
-    println("$v - $v1 = ${v - v1}")
-}
-
 fun main() {
-    calculator(55, 10)
-    calculator(2008, 1999)
+    var foo : Int = 55
+    var bar : Int = 2008
+    println("${foo} - ${foo-10} = ${foo-10}")
+    println("${bar} - ${bar-1999} = ${bar-1999}")
 }
