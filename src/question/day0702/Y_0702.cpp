@@ -4,7 +4,7 @@ using namespace std;
 #define CM 91.44
 
 int main() {
-  double yard;
+  	double yard;
 	printf("yard? ");
 	scanf("%lf", &yard);
 
