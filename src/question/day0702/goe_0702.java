@@ -14,5 +14,6 @@ public class goe_0702 {
 
         System.out.println(yard + "yard = " + ydTocmResult + "cm");
 
+        sc.close();
     }
 }
