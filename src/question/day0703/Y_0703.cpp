@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-		int width, length;
+    int width, length;
     scanf("%d %d", &width, &length);
 
     width += 5;
@@ -11,5 +11,5 @@ int main() {
     printf("width = %d\n", width);
     printf("length = %d\n", length);
     printf("area = %d\n", width * length);
-		return 0;
+    return 0;
 }
