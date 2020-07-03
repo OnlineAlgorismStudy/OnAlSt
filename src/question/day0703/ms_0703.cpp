@@ -14,6 +14,6 @@ int main() {
 	cout << "width = " << width << endl;
 	cout << "length = " << length << endl;
 	cout << "area = " << width * length << endl;
-
+ 
 	return 0;
 }
