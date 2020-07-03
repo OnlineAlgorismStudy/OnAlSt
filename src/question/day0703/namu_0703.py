@@ -4,5 +4,5 @@ parsed = list(map(int, nums))
 width = parsed[0] + 5
 length = parsed[1] * 2
 
-print(f'width = {width}\nlength = {length}')
+print(f'width = {width}\nlength = {length}\narea = {width*length}')
 
