@@ -44,8 +44,11 @@
     <img src="https://avatars3.githubusercontent.com/u/65213623?s=460&u=54a08f0deece470c593112cb9e2925974ef8934c&v=4" title="dbdudrb000" width="80" height="80">
 </a>
 <a href="https://github.com/JiyeonCha">
-    <img src="https://avatars0.githubusercontent.com/u/66763635?s=460&u=d9da8341d66fa25e0b6941a83d0d55ab957f9533&v=4" title="dbdudrb000" width="80" height="80">
+    <img src="https://avatars0.githubusercontent.com/u/66763635?s=460&u=d9da8341d66fa25e0b6941a83d0d55ab957f9533&v=4" title="JiyeonCha" width="80" height="80">
 </a>
 <a href="https://github.com/pyeeun">
-    <img src="https://avatars2.githubusercontent.com/u/33935840?s=460&u=b9e13fa3a2e3c98d0982e43e3f4e25e38ccd091d&v=4" title="dbdudrb000" width="80" height="80">
+    <img src="https://avatars2.githubusercontent.com/u/33935840?s=460&u=b9e13fa3a2e3c98d0982e43e3f4e25e38ccd091d&v=4" title="pyeeun" width="80" height="80">
+</a>
+<a href="https://github.com/hansong0219">
+    <img src="https://avatars2.githubusercontent.com/u/62323121?s=460&u=cf8532c44fbe8c40b424129f53da5f4d02c7d623&v=4" title="hansong0219" width="80" height="80">
 </a>
