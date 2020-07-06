@@ -16,6 +16,4 @@
 - kotlin
 
 ## 작업자
-<a href="https://github.com/JWooni">
-    <img src="https://avatars.githubusercontent.com/u/6128807?v=3" title="joungsik" width="80" height="80">
-</a>
+
