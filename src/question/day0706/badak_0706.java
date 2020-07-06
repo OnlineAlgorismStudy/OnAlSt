@@ -10,7 +10,7 @@ public class badak_0706 {
 		
 		int a = sc.nextInt();
 		
-		System.out.println((a % 400 == 0) || (a % 4 == 0)?"leap year":"commmon year");	
+		System.out.println((a % 400 == 0) || ((a % 4 == 0) && (a % 100 != 0))?"leap year":"commmon year");	
 	}
 }
 
