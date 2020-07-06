@@ -25,5 +25,7 @@ public class goe_0707 {
             default:
                 System.out.println("I don't know");
         }
+        
+        sc.close();
     }
 }
