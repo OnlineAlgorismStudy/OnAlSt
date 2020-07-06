@@ -27,3 +27,9 @@
 <a href="https://github.com/itkk0306">
     <img src="https://avatars2.githubusercontent.com/u/52662748?s=460&u=6d7cf9a17a7799cbb740a3ef0105e12c13012fa5&v=4" title="itkk0306" width="80" height="80">
 </a>
+<a href="https://github.com/sjl5411">
+    <img src="https://avatars3.githubusercontent.com/u/65157067?s=460&v=4" title="sjl5411" width="80" height="80">
+</a>
+<a href="https://github.com/Ellimis">
+    <img src="https://avatars3.githubusercontent.com/u/67461878?s=460&u=b197df3ac81865ed8c39f026b378ca0e5a96ba9d&v=4" title="Ellimis" width="80" height="80">
+</a>
