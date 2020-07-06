@@ -24,3 +24,6 @@
 <a href="https://github.com/i-am-ren">
     <img src="https://avatars0.githubusercontent.com/u/67572250?s=460&u=8687451e287462b3b8df018727b6a1a656079c80&v=4" title="i-am-ren" width="80" height="80">
 </a>
+<a href="https://github.com/itkk0306">
+    <img src="https://avatars2.githubusercontent.com/u/52662748?s=460&u=6d7cf9a17a7799cbb740a3ef0105e12c13012fa5&v=4" title="itkk0306" width="80" height="80">
+</a>
