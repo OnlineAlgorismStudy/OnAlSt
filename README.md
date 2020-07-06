@@ -23,32 +23,32 @@
     <img src="https://avatars.githubusercontent.com/u/6128807?v=3" title="joungsik" width="80" height="80">
 </a>
 <a href="https://github.com/i-am-ren">
-    <img src="https://avatars0.githubusercontent.com/u/67572250?s=460&u=8687451e287462b3b8df018727b6a1a656079c80&v=4" title="i-am-ren" width="80" height="80">
+    <img src="https://avatars0.githubusercontent.com/u/67572250?s=460&u=8687451e287462b3b8df018727b6a1a656079c80&v=4" title="i-am-ren" width="70" height="70">
 </a>
 <a href="https://github.com/itkk0306">
-    <img src="https://avatars2.githubusercontent.com/u/52662748?s=460&u=6d7cf9a17a7799cbb740a3ef0105e12c13012fa5&v=4" title="itkk0306" width="80" height="80">
+    <img src="https://avatars2.githubusercontent.com/u/52662748?s=460&u=6d7cf9a17a7799cbb740a3ef0105e12c13012fa5&v=4" title="itkk0306" width="70" height="70">
 </a>
 <a href="https://github.com/sjl5411">
-    <img src="https://avatars3.githubusercontent.com/u/65157067?s=460&v=4" title="sjl5411" width="80" height="80">
+    <img src="https://avatars3.githubusercontent.com/u/65157067?s=460&v=4" title="sjl5411" width="70" height="70">
 </a>
 <a href="https://github.com/Ellimis">
-    <img src="https://avatars3.githubusercontent.com/u/67461878?s=460&u=b197df3ac81865ed8c39f026b378ca0e5a96ba9d&v=4" title="Ellimis" width="80" height="80">
+    <img src="https://avatars3.githubusercontent.com/u/67461878?s=460&u=b197df3ac81865ed8c39f026b378ca0e5a96ba9d&v=4" title="Ellimis" width="70" height="70">
 </a>
 <a href="https://github.com/kimxoals">
-    <img src="https://avatars2.githubusercontent.com/u/66377873?s=460&u=ca8c2d91823f92c4c17752899d164ffe14a93762&v=4" title="kimxoals" width="80" height="80">
+    <img src="https://avatars2.githubusercontent.com/u/66377873?s=460&u=ca8c2d91823f92c4c17752899d164ffe14a93762&v=4" title="kimxoals" width="70" height="70">
 </a>
 <a href="https://github.com/eunbok">
-    <img src="https://avatars2.githubusercontent.com/u/15613029?s=460&u=02b4392c56b433d6b828ea36e80bdeb1c5229578&v=4" title="eunbok" width="80" height="80">
+    <img src="https://avatars2.githubusercontent.com/u/15613029?s=460&u=02b4392c56b433d6b828ea36e80bdeb1c5229578&v=4" title="eunbok" width="70" height="70">
 </a>
 <a href="https://github.com/dbdudrb000">
-    <img src="https://avatars3.githubusercontent.com/u/65213623?s=460&u=54a08f0deece470c593112cb9e2925974ef8934c&v=4" title="dbdudrb000" width="80" height="80">
+    <img src="https://avatars3.githubusercontent.com/u/65213623?s=460&u=54a08f0deece470c593112cb9e2925974ef8934c&v=4" title="dbdudrb000" width="70" height="70">
 </a>
 <a href="https://github.com/JiyeonCha">
-    <img src="https://avatars0.githubusercontent.com/u/66763635?s=460&u=d9da8341d66fa25e0b6941a83d0d55ab957f9533&v=4" title="JiyeonCha" width="80" height="80">
+    <img src="https://avatars0.githubusercontent.com/u/66763635?s=460&u=d9da8341d66fa25e0b6941a83d0d55ab957f9533&v=4" title="JiyeonCha" width="70" height="70">
 </a>
 <a href="https://github.com/pyeeun">
-    <img src="https://avatars2.githubusercontent.com/u/33935840?s=460&u=b9e13fa3a2e3c98d0982e43e3f4e25e38ccd091d&v=4" title="pyeeun" width="80" height="80">
+    <img src="https://avatars2.githubusercontent.com/u/33935840?s=460&u=b9e13fa3a2e3c98d0982e43e3f4e25e38ccd091d&v=4" title="pyeeun" width="70" height="70">
 </a>
 <a href="https://github.com/hansong0219">
-    <img src="https://avatars2.githubusercontent.com/u/62323121?s=460&u=cf8532c44fbe8c40b424129f53da5f4d02c7d623&v=4" title="hansong0219" width="80" height="80">
+    <img src="https://avatars2.githubusercontent.com/u/62323121?s=460&u=cf8532c44fbe8c40b424129f53da5f4d02c7d623&v=4" title="hansong0219" width="70" height="70">
 </a>
