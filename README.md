@@ -40,4 +40,9 @@
 <a href="https://github.com/eunbok">
     <img src="https://avatars2.githubusercontent.com/u/15613029?s=460&u=02b4392c56b433d6b828ea36e80bdeb1c5229578&v=4" title="eunbok" width="80" height="80">
 </a>
-
+<a href="https://github.com/dbdudrb000">
+    <img src="https://avatars3.githubusercontent.com/u/65213623?s=460&u=54a08f0deece470c593112cb9e2925974ef8934c&v=4" title="dbdudrb000" width="80" height="80">
+</a>
+<a href="https://github.com/JiyeonCha">
+    <img src="https://avatars0.githubusercontent.com/u/66763635?s=460&u=d9da8341d66fa25e0b6941a83d0d55ab957f9533&v=4" title="dbdudrb000" width="80" height="80">
+</a>
