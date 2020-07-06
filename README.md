@@ -12,7 +12,7 @@
 - C#
 - JavaScript
 - Python
-- otlin
+- Kotlin
 
 ## 작업자
 <a href="https://github.com/JWooni">
