@@ -33,3 +33,7 @@
 <a href="https://github.com/Ellimis">
     <img src="https://avatars3.githubusercontent.com/u/67461878?s=460&u=b197df3ac81865ed8c39f026b378ca0e5a96ba9d&v=4" title="Ellimis" width="80" height="80">
 </a>
+<a href="https://github.com/kimxoals">
+    <img src="https://avatars2.githubusercontent.com/u/66377873?s=460&u=ca8c2d91823f92c4c17752899d164ffe14a93762&v=4" title="kimxoals" width="80" height="80">
+</a>
+
