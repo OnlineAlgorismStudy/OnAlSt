@@ -16,8 +16,9 @@
 
 ## 작업자
 <a href="https://github.com/JWooni">
-    <img src="https://avatars0.githubusercontent.com/u/45754698?s=460&u=df2df8c40dac25fac3f2cad750efd1fbc93fef17&v=4" title="JWooni" width="80" height="80">
+    <img src="https://avatars2.githubusercontent.com/u/45754698?s=460&u=d13cb5f5bb10c17defdc1e1f97d341949cc8af6d&v=4" title="JWooni" width="80" height="80">
 </a>
+
 <a href="https://github.com/joungsik">
     <img src="https://avatars.githubusercontent.com/u/6128807?v=3" title="joungsik" width="80" height="80">
 </a>
