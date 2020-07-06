@@ -15,4 +15,6 @@
 - kotlin
 
 ## 작업자
-
+<a href="https://github.com/JWooni">
+    <img src="https://avatars0.githubusercontent.com/u/45754698?s=460&u=df2df8c40dac25fac3f2cad750efd1fbc93fef17&v=4" title="JWooni" width="80" height="80">
+</a>
