@@ -22,17 +22,24 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - id: file_changes
       uses: trilom/file-changes-action@v1.2.3
+      with:
+        output: ","
     - id: current-time
       uses: 1466587594/get-current-time@v1
       with:
         format: YYYY-MM-DD
         utcOffset: "+09:00"
+    - name: curl
+      uses: wei/curl@v1
+      with:
+        args: --location --request GET "https://us-central1-oasm-889a7.cloudfunctions.net/message?files=${{ steps.file_changes.outputs.files }}&name=${{ github.event.commits[0].author.name }}&message=${{ github.event.commits[0].message }}&date=${{ steps.current-time.outputs.formattedTime }}"
     - uses: actions/checkout@v2
     - name: test
       run: |
-        echo '${{ steps.file_changes.outputs.files}}'
+        echo '${{ steps.file_changes.outputs.files }}'
         echo '${{ steps.file_changes.outputs.files_modified}}'
         echo '${{ steps.file_changes.outputs.files_added}}'
         echo '${{ github.event.commits[0].author.name }}'
+        echo '${{ github.event.commits[0].author.email }}'
         echo '${{ github.event.commits[0].message }}'
         echo '${{ steps.current-time.outputs.formattedTime }}'
