@@ -29,13 +29,12 @@ jobs:
       with:
         format: YYYY-MM-DD
         utcOffset: "+09:00"
-    - name: curl
-      uses: wei/curl@v1
-      with:
-        args: --location --request GET "https://us-central1-oasm-889a7.cloudfunctions.net/message?files=${{ steps.file_changes.outputs.files_added }}&name=${{ github.event.commits[0].author.name }}&message=${{ github.event.commits[0].message }}&date=${{ steps.current-time.outputs.formattedTime }}"
     - uses: actions/checkout@v2
     - name: test
       run: |
+        apk add curl
+        apk add bash
+        curl --location --request GET "https://us-central1-oasm-889a7.cloudfunctions.net/message?files=${{ steps.file_changes.outputs.files_added }}&name=${{ github.event.commits[0].author.name }}&message=${{ github.event.commits[0].message }}&date=${{ steps.current-time.outputs.formattedTime }}"
         echo '${{ steps.file_changes.outputs.files }}'
         echo '${{ steps.file_changes.outputs.files_modified}}'
         echo '${{ steps.file_changes.outputs.files_added}}'
