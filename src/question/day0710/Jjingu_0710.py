@@ -10,7 +10,7 @@ import numpy as np
 
 def PorF(n,score):
     score_re = np.float32(score.split(' '))
-    avg = score_re.sum()/n
+    avg = rount(score_re.sum()/n,1)
     print('avg :',avg)
     if avg>=80:
         print("pass")
