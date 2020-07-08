@@ -1,13 +1,10 @@
-n = input('Number? 2')
+number = 2
 
-if n == 1:
-    print("dog")
-
-elif n ==2 :
-    print("cat")
-
-elif n == 3 :
-    print("chick")
-
+if number == 1:
+    print('dog')
+elif number == 2:
+    print('cat')
+elif number == 3:
+    print('chick')
 else:
-    print("I don't know.")
+    print('I dont know.')
