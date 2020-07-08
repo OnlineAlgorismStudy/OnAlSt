@@ -17,18 +17,22 @@ capital = int(input('number? '))
 def capital_func(capital):
 
     if capital == 1:
-        print('Seoul')
+        print('\nSeoul')
+        print('\n1. Korea\n2. USA\n3. Japan\n4. China')
         capital_func(capital = int(input('number? ')))
     elif capital == 2:
-        print('Washington')
+        print('\nWashington')
+        print('\n1. Korea\n2. USA\n3. Japan\n4. China')
         capital_func(capital = int(input('number? ')))
     elif capital == 3:
-        print('Tokyo')
+        print('\nTokyo')
+        print('\n1. Korea\n2. USA\n3. Japan\n4. China')
         capital_func(capital = int(input('number? ')))
     elif capital == 4:
-        print('Beijing')
+        print('\nBeijing')
+        print('\n1. Korea\n2. USA\n3. Japan\n4. China')
         capital_func(capital = int(input('number? ')))
     else:
-        print('none')
+        print('\nnone')
 
 capital_func(capital)
