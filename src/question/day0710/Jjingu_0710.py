@@ -18,7 +18,7 @@ def PorF(n,score):
         print("fail")
 
 n = int(input())
-while n>10 or n<0 :
+while n>10:
     print('Wrong Number of subject. The Number of subject should be lower than 11')
     n = int(input())
     
