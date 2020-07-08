@@ -14,13 +14,21 @@
 print('1. Korea\n2. USA\n3. Japan\n4. China')
 capital = int(input('number? '))
 
-if capital == 1:
-    print('Seoul')
-elif capital == 2:
-    print('Washington')
-elif capital == 3:
-    print('Tokyo')
-elif capital == 4:
-    print('Beijing')
-else:
-    print('none')
+def capital_func(capital):
+
+    if capital == 1:
+        print('Seoul')
+        capital_func(capital = int(input('number? ')))
+    elif capital == 2:
+        print('Washington')
+        capital_func(capital = int(input('number? ')))
+    elif capital == 3:
+        print('Tokyo')
+        capital_func(capital = int(input('number? ')))
+    elif capital == 4:
+        print('Beijing')
+        capital_func(capital = int(input('number? ')))
+    else:
+        print('none')
+
+capital_func(capital)
