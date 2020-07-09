@@ -6,7 +6,7 @@ static char c;
 
 int main() {
 	c = 'Y';
-	while(c == 'Y')
+	while(c == 'Y' || c == 'y'))
 	{
 		print();
 		fflush(stdin);
