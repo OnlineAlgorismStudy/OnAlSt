@@ -5,6 +5,9 @@ using namespace std;
 int main() {
 	int n;
 	scanf("%d", &n);
+	
+	if(n > 10)
+		return 0;
 
 	double sum = 0;
 	for(int i=0; i<n; i++)
