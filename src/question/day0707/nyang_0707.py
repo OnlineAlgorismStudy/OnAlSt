@@ -1,10 +1,10 @@
-number = 2
+n=int(input("숫자입력: "))
 
-if number == 1:
+if n == 1:
     print('dog')
-elif number == 2:
+elif n == 2:
     print('cat')
-elif number == 3:
+elif n == 3:
     print('chick')
 else:
     print('I dont know.')
