@@ -1,30 +1,25 @@
-def average():   
-    
-    while True:
-     
-        try:
-            s = 0
-            n = int(input("과목의 갯수: "))
-            if n < 1 or n > 10:
-                raise ValueError 
+sum = 0
+
+def average():
+    count = int(input())
+    if count < 11:
+        for n in range(count):
+            global sum
+            score = int(input())
+            while score > 100: 
+                score = int(input("100이하로입력해주세요: "))
+
+            sum = sum+score
         
-        except ValueError:
-            print("1-10까지의 숫자를 입력해주세요.")
-            continue
-            
-
-        for x in range(1,n+1):
-            a=float(input("%d번째 과목 점수: "%(x)))
-            s+=a
-
-
-        print("avg : %.2f "%(round(s/n,1)))
-
-
-        if s/n >= 80:
+        avg = sum/count
+        print("avg :", round(sum/count,1))
+        
+        if avg >= 80:
             print("pass")
-
         else:
             print("fail")
+
+    else:
+        print("1에서 10사이의 정수를 입력해주세요")
 
 average()
