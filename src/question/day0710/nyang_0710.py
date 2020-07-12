@@ -10,7 +10,7 @@ def average():
         
         except ValueError:
             print("1-10까지의 숫자를 입력해주세요.")
-            break
+            continue
             
 
         for x in range(1,n+1):
