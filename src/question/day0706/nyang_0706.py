@@ -1,10 +1,13 @@
-def leapyr(n):
+def leapyr():
+    n=int(input("year : "))
+
     if n % 400 == 0:
-        return "leap year"
+        print("leap year")
 
     if n % 4 == 0 and n % 100 != 0:
-        return "leap year"
+        print("leap year")
 
     else:
-        return "common year"
-print leapyr(2008)
+        print("common year")
+
+leapyr()
