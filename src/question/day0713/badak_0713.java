@@ -19,7 +19,10 @@ public class badak_0713 {
 	public static void main(String[] args) throws Exception {
 		for(int i = 2; i <= 4; i++) {
 			for(int j = 1; j <= 5; j++) {
-				System.out.printf(String.format("%d * %d =%3d   ", i, j, i*j));
+				if( j == 5)
+					System.out.printf("%d * %d =%3d", i, j, i*j);
+				else
+					System.out.printf("%d * %d =%3d   ", i, j, i*j);
 			}
 			System.out.println("");
 		}
