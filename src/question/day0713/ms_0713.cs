@@ -6,9 +6,15 @@ namespace algorithm_11
     {
         static void Main(string[] args)
         {
-            for(int i = 2; i < 5; i++) {
-                for(int j = 1; j < 6; j++) {
-                    Console.Write($"{i} * {j} = {i*j, 2:#0}   ");
+            int rowMax = 4;
+            int columnMax = 5;
+
+            for(int i = 2; i <= rowMax; i++) {
+                for(int j = 1; j <= columnMax; j++) {
+                    Console.Write($"{i} * {j} = {i*j, 2:#0}");
+
+                    if(j != columnMax)
+                        Console.Write("   ");
                 }
                 Console.WriteLine();
             }
