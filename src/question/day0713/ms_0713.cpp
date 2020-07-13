@@ -3,10 +3,16 @@
 using namespace std;
 
 int main() {
-	for (int i = 2; i < 5; i++) {
-		for (int j = 1; j < 6; j++)
-			printf("%d * %d = %2d   ", i, j, (i*j));
+	int rowMax = 4;
+	int columnMax = 5;
 
+	for (int i = 2; i <= rowMax; i++) {
+		for (int j = 1; j <= columnMax; j++) {
+			printf("%d * %d = %2d", i, j, (i * j));
+
+			if (j != columnMax)
+				cout << "   ";
+		}
 		cout << endl;
 	}
 	return 0;
