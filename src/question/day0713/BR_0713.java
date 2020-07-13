@@ -27,7 +27,7 @@ public class BR_0713 {
 		}
 		
 		
-		System.out.println(line);
+		System.out.print(line);
 		
 	}
 	
