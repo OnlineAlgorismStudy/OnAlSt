@@ -13,16 +13,24 @@ admin.initializeApp({
 });
 
 const db = admin.database();
-const ref = db.ref("users");
 
 exports.message = functions.https.onRequest((request, response) => {
   const data = request.query;
-  console.log(data);
-  if (data.files !== "" && data.files !== undefined && data.files !== null) {
-    const files = data.files.split(",");
-    files.map((file) => {
-      const isALST = RegExp("src/question").test(file);
-      if (isALST) {
+
+  const files = data.files.split(",");
+  files.map((file) => {
+    const isALST = RegExp("src/question").test(file);
+    if (isALST) {
+      db.ref("users").once("value", (value) => {
+        const array = [];
+        Object.keys(value.val()).map((key) => {
+          return array.push({
+            key: key,
+            value: value.val()[key],
+          });
+        });
+        const user = array.find((item) => item.value.github === data.name);
+
         const names = file.split("/");
         const date =
           "2020-" +
@@ -33,20 +41,25 @@ exports.message = functions.https.onRequest((request, response) => {
             );
 
         db.ref("files")
-          .child(names[3].split(".")[0])
+          .child(date)
+          .child(user.key)
           .set(
             JSON.parse(
               JSON.stringify({
                 date: date,
                 extension: names[3].split(".")[1],
                 message: data.message,
+                name: file,
                 upload: data.date,
-                user: data.name,
+                user: user.key,
               })
             )
           );
-      }
-    });
-  }
-  response.send(`${JSON.stringify(data)}"`);
+        return {};
+      });
+    }
+    return [];
+  });
+
+  response.send(`${JSON.stringify(data)}`);
 });
