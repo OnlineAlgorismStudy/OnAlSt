@@ -6,7 +6,7 @@ public class Labong_07_15 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("ют╥б: ");
+		System.out.print("О©╫т╥О©╫: ");
 		int num = sc.nextInt();
 		int num2 = num*2;
 		String result = "";
@@ -24,7 +24,7 @@ public class Labong_07_15 {
 				result += "*";
 			}
 			result += "\n";
-		}
+		} // for
 		
 		System.out.println(result);
 		
