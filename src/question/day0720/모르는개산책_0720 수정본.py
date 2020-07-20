@@ -19,15 +19,16 @@ number = int(input(''))
 a = 0
 b = 0
 
-while number > 0:
+if number >= 3 and number <= 10:
+    while number > 0:
     
-    if a == number-1:
-        print(alpha_list[b])
-        a = 0
-        b += 1
-        number -= 1
+        if a == number-1:
+            print(alpha_list[b])
+            a = 0
+            b += 1
+            number -= 1
 
-    else:
-        print(alpha_list[b], end = '')
-        a += 1
-        b += 1
+        else:
+            print(alpha_list[b], end = '')
+            a += 1
+            b += 1
