@@ -7,7 +7,7 @@ Created on Mon Jul 20 23:21:14 2020
 #아대숲 찐구 0722 문제풀이
 
 def star_tri3(num):
-    for i in range(0,2*num):
+    for i in range(0,2*num-1):
         if i > num:
             print((2*num-i)*"*")
         else:
