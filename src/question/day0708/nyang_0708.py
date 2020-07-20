@@ -6,22 +6,23 @@ while True :
 
     num = int(input("1. Korea\n2. USA\n3. Japan\n4. China\nnumber? "))
 
-    if Land == 1:
+    if num == 1:
 
         print("Seoul")
 
-    elif Land == 2 :
+    elif num == 2 :
 
         print("Washington")
 
-    elif Land == 3 :
+    elif num == 3 :
 
         print("Tokyo")
 
-    elif Land == 4 :
+    elif num == 4 :
 
         print("Beijing")
 
     else :
 
         print("none")
+        break
