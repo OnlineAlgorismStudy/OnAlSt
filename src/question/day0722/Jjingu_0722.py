@@ -15,3 +15,4 @@ def star_tri3(num):
         
 num = int(input())
 star_tri3(num)
+
