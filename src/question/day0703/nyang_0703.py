@@ -1,10 +1,12 @@
-def calculate_area(length, width):
+w = int(input("width: "))
+l = int(input("length: "))
 
-    return length * width
+w = w + 5
+l = l*2
 
-w = 20
-l = 15
+def calculate_area(w, l):
+    return w*l
 
-print('Width =', w+5)
-print('Length = ', l*2)
-print('area = ', calculate_area(l, w+5))
+print("width =", w)
+print("length = ", l)
+print("area = ", calculate_area(w, l))
