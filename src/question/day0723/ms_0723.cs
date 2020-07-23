@@ -18,7 +18,7 @@ namespace algorithm_19
                 //Console.Write(new String('*', 2*Math.Abs(i)+1));
 
                 Console.WriteLine();
-		    }
+	    }
         }
     }
 }
