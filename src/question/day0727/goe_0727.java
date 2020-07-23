@@ -16,7 +16,7 @@ public class goe_0727 {
                 System.out.printf("%2s", " ");
             }
             for(int j = 0; j <= i; j++){
-                System.out.printf("%2d", j+1);
+                System.out.printf("%-2d", j+1);
             }
             System.out.println();
         }
