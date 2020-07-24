@@ -9,7 +9,7 @@ int main() {
 	cin >> n;
 
 	for (int i = 1; i < 2*n; i += 2) {
-		// 2Áß for ¹®
+		// 2ì¤‘ for ë¬¸
 		for (int j = 0; j < 2 * n - 1 - i; j++) {
 			cout << " ";
 		}
@@ -20,7 +20,7 @@ int main() {
 		
 		cout << endl;
 
-		//´ÜÀÏ for ¹®
+		// ë‹¨ì¼ for ë¬¸
 		//cout << string(2*n -1 -i, ' ');
 		//cout << string(i, '*') << endl;
 	}
