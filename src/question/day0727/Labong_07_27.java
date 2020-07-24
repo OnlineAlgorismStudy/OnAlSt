@@ -7,19 +7,20 @@ public class Labong_07_27 {
 		Scanner sc = new Scanner(System.in);
 		
 		int num = sc.nextInt();
-		int count = num-1;
+		int count = (num*2)-1;
 		
 		for(int i = 1; i<=num;i++) {
-			for(int k=0; k<count; k++) {
+			for(int k=0; k<count-i; k++) {
 				System.out.print(" ");
 			}
 			
 			for(int j=1; j<=i; j++) {
-				System.out.print(j);
+				System.out.print(j+" ");
 			}
 			count--;
 			System.out.println("");
 		}
+		
 	}
 
 }
