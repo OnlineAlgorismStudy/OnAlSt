@@ -10,7 +10,7 @@ def num_tri2(num):
     for i in reversed(range(1,num+1)):
         num_str = ""
         for j in range(0,i):
-            num_str += " "+str(k)
+            num_str += " "+str(k%10)
             k = k+1
         
         print(num_str.rjust(num*2))
