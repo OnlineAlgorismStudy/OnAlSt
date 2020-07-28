@@ -8,11 +8,6 @@ rl.once("line", (line) => {
   const count = parseInt(line);
   [...Array(count).keys()].forEach((x, index, array) => {
     let nums = [...Array(index + 1).keys()];
-    // console.log(
-    //   array.length - index - 1,
-    //   nums,
-    //   nums.map((num) => `${num + 1} `).join("")
-    // );
     console.log(
       "  ".repeat(array.length - index - 1) +
         nums
@@ -22,7 +17,3 @@ rl.once("line", (line) => {
   });
   rl.close();
 });
-
-// 0 -> 2
-// 1 -> 1
-// 2 -> 0
