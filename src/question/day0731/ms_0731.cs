@@ -30,7 +30,7 @@ namespace algorithm_25
                         Console.Write($"{j} * {i} = {j*i, 2:#0}");
 
                         if(j != end)
-                            Console.Write('\t');
+                            Console.Write("   ");
                     }
                 } 
                 else 
@@ -40,7 +40,7 @@ namespace algorithm_25
                         Console.Write($"{j} * {i} = {j*i, 2:#0}");
 
                         if(j != end)
-                            Console.Write('\t'); 
+                            Console.Write("   "); 
                     }
                 }
 
