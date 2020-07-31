@@ -40,8 +40,16 @@ public class badak_0731 {
 	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int a = sc.nextInt();
-		int b = sc.nextInt();
+		int a,b;
+		while(true) {
+			a = sc.nextInt();
+			b = sc.nextInt();
+			if (!((1 < a && a < 9) &&(1 < b && b < 9))) {
+				System.out.println("INPUT ERROR!");
+			}else {
+				break;
+			}
+		}
 		sc.close();
 		for(int i = 1 ; i<=9;i++) {
 			String result ="";
