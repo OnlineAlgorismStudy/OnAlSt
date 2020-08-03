@@ -8,6 +8,10 @@ namespace algorithm_26
         {
             String[] input = Console.ReadLine().Split(' ');
 
+            // 10 개 미만의 정보일 때 프로그램 
+            if(input.Length < 10) {
+                return;
+            }
             // 10 개의 문자만 처리
             // 1, 4, 7 번째 문자 출력
             bool[] onOff = { true, false, false, true, false,
