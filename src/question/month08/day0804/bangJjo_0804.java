@@ -9,16 +9,24 @@ public class bangJjo_0804 {
 		// TODO Auto-generated method stub
 		Scanner sc =new Scanner(System.in);
 		
-		char[] c = new char[10];
+		int[] num = new int[100];
 		
-		for(int i = 0; i < c.length; i++) {
-			String input = sc.next();
-			c[i] = input.charAt(0);
+		for(int i = 0; i < num.length; i++) {
+			num[i] = sc.nextInt();
+			
+			if(num[i] == 0) {
+				break;
+			} // end if
+			
 		} // end for
 		
 		sc.close();
 		
-		System.out.print(c[0] + " " + c[3] + " " + c[6]);
+		for(int i = num.length-1; i >= 0; i--) {
+			if(num[i]!=0) {
+				System.out.print(num[i] + " ");
+			} // end if
+		} // end for
 		
 	} // main
 
