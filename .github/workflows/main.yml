@@ -34,8 +34,9 @@ jobs:
       run: |
         curl -G "https://us-central1-oasm-889a7.cloudfunctions.net/message" --data-urlencode "files=${{ steps.file_changes.outputs.files_added }}" --data-urlencode "name=${{ github.event.commits[0].author.name }}" --data-urlencode "message=${{ github.event.commits[0].message }}" --data-urlencode "date=${{ steps.current-time.outputs.formattedTime }}"
         echo '${{ steps.file_changes.outputs.files }}'
-        echo '${{ steps.file_changes.outputs.files_modified}}'
         echo '${{ steps.file_changes.outputs.files_added}}'
+        echo '${{ steps.file_changes.outputs.files_modified}}'
+        echo '${{ github.event.sender.html_url }}'
         echo '${{ github.event.commits[0].author.name }}'
         echo '${{ github.event.commits[0].author.email }}'
         echo '${{ github.event.commits[0].message }}'
