@@ -6,7 +6,7 @@ int main() {
 	int data[100], cnt = 0;
 
 	while (true) {
-		// cin À¸·Î´Â ÇÑ¹ø¿¡ ÀÎ½ÄÀÌ ¾ÈµÇ³×¿ä ¤·¤±¤·a
+		// cin ìœ¼ë¡œëŠ” í•œë²ˆì— ì¸ì‹ì´ ì•ˆë˜ë„¤ìš” ã…‡ã…ã…‡a
 		scanf_s("%d", &data[cnt]);
 		
 		if (data[cnt] == 0)
