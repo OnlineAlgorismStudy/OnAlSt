@@ -30,9 +30,9 @@ exports.message = functions.https.onRequest((request, response) => {
           .slice(-2)}`;
 
         const docRef = db
-          .collection(date)
-          .doc(data.name)
-          .collection("files")
+          .collection("date")
+          .doc(date)
+          .collection(data.name)
           .doc(names[4].split(".")[1]);
 
         docRef.set({
