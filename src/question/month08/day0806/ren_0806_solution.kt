@@ -7,7 +7,7 @@ fun main() = with(Scanner(System.`in`)) {
     val buff = IntArray(10);
     for(i in 0..9){
         val input = nextInt()
-        print(i)
+        //print(i)
         buff[i] = input;
         if(input < max){
             max = input
