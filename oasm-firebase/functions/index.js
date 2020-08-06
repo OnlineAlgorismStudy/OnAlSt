@@ -29,16 +29,24 @@ exports.message = functions.https.onRequest((request, response) => {
           .replace("day", "")
           .slice(-2)}`;
 
+        const name = data.name.split("/").pop();
+
         const docRef = db
           .collection("date")
           .doc(date)
-          .collection(data.name)
-          .doc(names[4].split(".")[1]);
+          .collection("users")
+          .doc(name);
 
-        docRef.set({
-          name: names[4],
-          upload: data.date,
-        });
+        docRef.set(
+          {
+            files: admin.firestore.FieldValue.arrayUnion({
+              name: names[4],
+              upload: data.date,
+              extension: names[4].split(".")[1],
+            }),
+          },
+          { merge: true }
+        );
       }
     });
   }
