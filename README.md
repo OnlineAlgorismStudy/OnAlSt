@@ -8,7 +8,7 @@
 
 ## 기술 스택 소개
 - Java
-- 
+- C
 - C++
 - C#
 - JavaScript
