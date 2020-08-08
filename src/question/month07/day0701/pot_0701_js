@@ -1,0 +1,13 @@
+function change1(yard){
+            result = yard * 91.44;
+            data = result.toFixed(1);
+            return data;
+        }
+
+        function change2(inch){
+            result = inch * 2.54;
+            data = result.toFixed(1);
+            return data;
+        }
+        document.write("2.1 yd = " + change1(2.1)+"cm"+"<br>");
+        document.write("10.5 in = " + change2(10.5)+"cm");
