@@ -1,0 +1,9 @@
+<script>
+        for(i=2;i<5;i++)
+        {
+            for(j=1;j<6;j++){
+                document.write(i+"&nbsp&nbsp*&nbsp"+j+"&nbsp&nbsp&nbsp=&nbsp&nbsp&nbsp"+(i*j)+"&nbsp&nbsp&nbsp");
+            }
+            document.write("<br>");
+        }
+    </script>
