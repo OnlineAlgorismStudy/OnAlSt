@@ -15,6 +15,8 @@ admin.initializeApp({
 
 const db = admin.firestore();
 
+const is_blank = (value) => value == "" || value == undefined || value == null;
+
 exports.message = functions.https.onRequest((request, response) => {
   const data = request.query;
   if (data.files !== "" && data.files !== undefined && data.files !== null) {
@@ -51,4 +53,20 @@ exports.message = functions.https.onRequest((request, response) => {
     });
   }
   response.send(`${JSON.stringify(data)}"`);
+});
+
+exports.user = functions.https.onRequest((request, response) => {
+  const data = request.query;
+  if (!is_blank(data.name) && !is_blank(data.github)) {
+    const docRef = db.collection("users").doc(data.github);
+    docRef.set(
+      {
+        name: data.name,
+        github: data.github,
+        state: is_blank(data.state) ? 0 : parseInt(data.state),
+      },
+      { merge: true }
+    );
+  }
+  response.status(200).json(data);
 });
