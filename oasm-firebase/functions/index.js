@@ -34,6 +34,14 @@ exports.message = functions.https.onRequest((request, response) => {
 
         const name = data.name.split("/").pop();
 
+        const dateDocRef = db.collection("date").doc(date);
+        dateDocRef.set(
+          {
+            date: date,
+          },
+          { merge: true }
+        );
+
         const docRef = db
           .collection("date")
           .doc(date)
