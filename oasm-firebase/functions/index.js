@@ -15,7 +15,8 @@ admin.initializeApp({
 
 const db = admin.firestore();
 
-const is_blank = (value) => value == "" || value == undefined || value == null;
+const is_blank = (value) =>
+  value === "" || value === undefined || value === null;
 
 exports.message = functions.https.onRequest((request, response) => {
   const data = request.query;
