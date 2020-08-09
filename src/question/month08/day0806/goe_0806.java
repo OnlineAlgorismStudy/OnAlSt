@@ -7,7 +7,7 @@ public class goe_0806 {
 
         int[] array = new int[10];
 
-        int num, min = 0;
+        int num, min = 1000;
 
         Scanner sc = new Scanner(System.in);
 
@@ -19,8 +19,9 @@ public class goe_0806 {
                 System.out.println("1000 이하의 정수를 입력하시오.");
                 System.exit(0);
             }
-
-            if( array[i] <= array[0])
+            
+            // array[0] -> min 으로 수정. 어떤 수가 오든 배열의 첫번째 항목과 비교를 하게 되어 제대로 된 최소값을 얻지 못 함을 알게됨.
+            if( array[i] <= min)
             min = array[i];
         }
         System.out.print(min);
