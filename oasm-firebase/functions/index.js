@@ -18,6 +18,27 @@ const db = admin.firestore();
 const is_blank = (value) =>
   value === "" || value === undefined || value === null;
 
+const setDateInfo = async (date) => {
+  await db
+    .collection("date")
+    .doc(date)
+    .collection("users")
+    .get()
+    .then((snapshot) => {
+      const dateDocRef = db.collection("date").doc(date);
+      dateDocRef.set(
+        {
+          date: date,
+          length: snapshot.docs.length,
+        },
+        { merge: true }
+      );
+    })
+    .catch((err) => {
+      console.log("Error getting documents", err);
+    });
+};
+
 exports.message = functions.https.onRequest((request, response) => {
   const data = request.query;
   if (data.files !== "" && data.files !== undefined && data.files !== null) {
@@ -34,30 +55,26 @@ exports.message = functions.https.onRequest((request, response) => {
 
         const name = data.name.split("/").pop();
 
-        const dateDocRef = db.collection("date").doc(date);
-        dateDocRef.set(
-          {
-            date: date,
-          },
-          { merge: true }
-        );
-
         const docRef = db
           .collection("date")
           .doc(date)
           .collection("users")
           .doc(name);
 
-        docRef.set(
-          {
-            files: admin.firestore.FieldValue.arrayUnion({
-              name: names[4],
-              upload: data.date,
-              extension: names[4].split(".")[1],
-            }),
-          },
-          { merge: true }
-        );
+        docRef
+          .set(
+            {
+              files: admin.firestore.FieldValue.arrayUnion({
+                name: names[4],
+                upload: data.date,
+                extension: names[4].split(".")[1],
+              }),
+            },
+            { merge: true }
+          )
+          .then(() => {
+            setDateInfo(date);
+          });
       }
     });
   }
