@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace samdasu_0805
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double[] avg = new double[6] { 85.6, 79.5, 83.1, 80.0, 78.2, 75.0 };
+
+            int a = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());
+
+            //int b = Convert.ToInt32(Console.ReadLine());
+
+            double sum = (avg[a + 1] + avg[b + 1]) / 2.0;
+            Console.WriteLine("{0:0.0}",sum);
+           /* for(int i = 0; i>avg.Length; i++)
+            {
+                Console.Write()
+
+                *//*if(a == avg[a + 1] || b==avg[b+1])
+                {
+                    Console.WriteLine();
+                }*//*
+            }*/
+        }
+    }
+}
