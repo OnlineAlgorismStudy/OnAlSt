@@ -33,6 +33,7 @@ const setDateInfo = async (date) => {
         },
         { merge: true }
       );
+      return {};
     })
     .catch((err) => {
       console.log("Error getting documents", err);
@@ -74,6 +75,10 @@ exports.message = functions.https.onRequest((request, response) => {
           )
           .then(() => {
             setDateInfo(date);
+            return {};
+          })
+          .catch((err) => {
+            console.log(err);
           });
       }
     });
