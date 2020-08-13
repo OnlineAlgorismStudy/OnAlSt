@@ -28,7 +28,7 @@ public class BR_0813 {
 		int max = 0;
 		boolean first = true;
 		while((input = sc.nextInt()) != 999 && inputCnt < 100) {
-			if (input > 999) {
+			if (input > 999 || input < -999) {
 				System.out.println("세 자리 이하의 정수만 입력하세요.");
 				continue;
 			}
