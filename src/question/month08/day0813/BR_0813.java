@@ -23,10 +23,11 @@ public class BR_0813 {
 		Scanner sc = new Scanner(System.in);
 		
 		int input;
+		int inputCnt = 0;
 		int min = 0;
 		int max = 0;
 		boolean first = true;
-		while((input = sc.nextInt()) != 999) {
+		while((input = sc.nextInt()) != 999 && inputCnt < 100) {
 			if (input > 999) {
 				System.out.println("세 자리 이하의 정수만 입력하세요.");
 				continue;
@@ -39,6 +40,7 @@ public class BR_0813 {
 				min = Integer.min(min, input);
 				max = Integer.max(max, input);
 			}
+			inputCnt++;
 		}
 		
 		sc.close();
