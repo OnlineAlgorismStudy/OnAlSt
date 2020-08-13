@@ -7,14 +7,14 @@ public class goe_0813 {
 
         int[] array = new int[100];
 
-        int num, max = 0, min = 999;
+        int num, max = -999, min = 999;
 
         Scanner sc = new Scanner(System.in);
 
         for(int i = 0; i < array.length; i++){
             num = sc.nextInt();
 
-            if (num == 999){
+            if (num == 999 || num < max || num > min){
                 break;
             }
 
