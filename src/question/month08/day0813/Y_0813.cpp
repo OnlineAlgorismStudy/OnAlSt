@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
 	int num;
-	int max_num = 0, min_num = 9876543;
+	int max_num = -9876543, min_num = 9876543;
 
 	while(true)
 	{
