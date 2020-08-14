@@ -18,12 +18,10 @@ public class Labong_08_17 {
 			if(num[i] == 0) {break;}
 			
 			if(num[i] %2 == 0) {
-				num[i] = num[i]/2;
-				result += num[i]+" ";
+				result += num[i]/2+" ";
 				count++;				
 			}else{
-				num[i] = num[i]*2;
-				result += num[i]+" ";
+				result += num[i]*2+" ";
 				count++;
 			}
 		}				
