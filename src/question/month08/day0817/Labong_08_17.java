@@ -20,19 +20,14 @@ public class Labong_08_17 {
 			if(num[i] %2 == 0) {
 				num[i] = num[i]/2;
 				result += num[i]+" ";
-				count++;
-				
+				count++;				
 			}else{
 				num[i] = num[i]*2;
 				result += num[i]+" ";
 				count++;
 			}
-		}
-		
-		
-		
+		}				
 		System.out.println(count + "\n"+result);
-		// 8 10 5 15 100 0
 	}
 
 }
