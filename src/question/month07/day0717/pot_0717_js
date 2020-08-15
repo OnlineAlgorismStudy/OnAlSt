@@ -1,0 +1,18 @@
+<script>
+        /*
+        ***** i=0 / j x / k = 0 1 2 3
+         ***  i=1 / j x 1 / k =  0 1 2
+          *   i =2 / j x 1 2 / k = 0
+        */
+        number = parseInt(prompt());
+        for(i=0;i<number;i++){
+            for(j=0;j<i;j++){
+                document.write("&nbsp");
+            }
+            for(k=0;k<(number-i)*2-1;k++){
+                document.write("*");
+                
+            }
+            document.write("<br>");
+        }
+    </script>
