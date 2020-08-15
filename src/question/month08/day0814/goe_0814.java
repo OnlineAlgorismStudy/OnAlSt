@@ -32,6 +32,6 @@ public class goe_0814 {
 
         System.out.println("Multiples of 5: " + cnt);
         System.out.println("sum: " + sum);
-        System.out.println("avg: " + Math.round(avg*100)/100.0);
+        System.out.println("avg: " + String.format("%.1f", avg));
     }
 }
