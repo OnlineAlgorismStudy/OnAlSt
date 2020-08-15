@@ -14,7 +14,7 @@ public class goe_0813 {
         for(int i = 0; i < array.length; i++){
             num = sc.nextInt();
 
-            if (num == 999 || num < max || num > min){
+            if (num == 999){
                 break;
             }
 
