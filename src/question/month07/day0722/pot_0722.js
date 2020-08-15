@@ -1,0 +1,22 @@
+    <script>
+        /*
+        0
+        01
+        012
+        01
+        0
+        */
+        data = prompt();
+        for(i=0;i<data;i++){
+            for(j=0;j<=i;j++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+        for(i=0;i<data-1;i++){
+            for(j=2;j>i;j--){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+    </script>
