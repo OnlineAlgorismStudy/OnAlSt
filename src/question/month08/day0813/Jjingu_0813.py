@@ -9,7 +9,8 @@ Created on Sun Aug 16 17:23:57 2020
 import numpy as np
 
 num_list = []
-while len(num_list)<10:
+rep = True
+while rep==True:
     a = int(input())
     if a>999 and a<-999:
         print("It is out of range")
