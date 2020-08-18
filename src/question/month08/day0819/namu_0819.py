@@ -6,5 +6,5 @@ while n.isupper():
     else:
         d[n] += 1
     n = input()
-for key in d:
+for key in sorted(d):
     print(key, ':', d[key])
