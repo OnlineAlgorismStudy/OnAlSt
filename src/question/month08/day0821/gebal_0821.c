@@ -1,17 +1,20 @@
 #include<stdio.h>
 
 int main() {
-	int first[2][4] = {
-		{1, 2, 3, 4},
-		{5, 6, 7, 8}
-	};
-	int second[2][4] = {
-		{1, 4, 7, 8},
-		{3, 6, 9, 8}
-	};
+	int cache[2][2][4], num;
+	for (int n = 0; n < 2; n++) {
+		if (n == 0) printf("first array\n");
+		else printf("second array\n");
+		for (int i = 0; i < 2; i++) {
+			for (int j = 0; j < 4; j++) {
+				scanf(" %d", &num);
+				cache[n][i][j] = num;
+			}
+		}
+	}
 	for (int i = 0; i < 2; i++) {
 		for (int j = 0; j < 4; j++) {
-			printf("%d ", first[i][j] * second[i][j]);
+			printf("%d ", cache[0][i][j] * cache[1][i][j]);
 		}
 		printf("\n");
 	}
