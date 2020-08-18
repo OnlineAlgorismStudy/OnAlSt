@@ -4,4 +4,4 @@ while True:
     if inp == 0:
         break
     s[int(inp / 10)] += 1
-[print(i * 10 if i != 0 else 1, " : ", s[i], "person") if s[i] != 0 else None for i in range(10, 0, -1)]
+[print(i * 10 if i != 0 else 1, " : ", s[i], "person") if s[i] != 0 else None for i in range(10, -1, -1)]
