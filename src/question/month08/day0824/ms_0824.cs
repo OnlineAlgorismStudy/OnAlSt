@@ -18,7 +18,7 @@ namespace algorithm_41
                 foreach(var subject in person) 
                     avg += Convert.ToInt32(subject);
 
-                if((avg/4) < 80) 
+                if((avg/4) >= 80) 
                 {
                     data[i] = "pass";
                     successful++;
