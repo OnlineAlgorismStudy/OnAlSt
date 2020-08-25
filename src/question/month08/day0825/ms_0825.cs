@@ -10,13 +10,15 @@ namespace algorithm_42
             int[] nss = new int[10]; // number of students by score
             int i = 0;
 
-            while(true) 
+            while(i < studnets.Length) 
             {
                 int temp = Convert.ToInt32(Console.ReadLine());
 
                 if(temp != 0) 
                     nss[(temp/10)-1]++;
                 else break;
+                
+                i++;
             }
 
             for(i = nss.Length-1; i >= 0; i--) 
