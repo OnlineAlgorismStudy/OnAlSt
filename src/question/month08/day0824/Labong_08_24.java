@@ -23,7 +23,7 @@ public class Labong_08_24 {
 			for(int person2 : person[k]) {
 				result += person2; 
 			}
-			if(result >= 80) {
+			if(result/4 >= 80) {
 				System.out.println("pass");
 				result = 0;
 				count++;
