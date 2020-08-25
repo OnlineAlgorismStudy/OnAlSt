@@ -6,11 +6,10 @@ namespace algorithm_42
     {
         static void Main(string[] args)
         {
-            int[] students = new int[100];
             int[] nss = new int[10]; // number of students by score
             int i = 0;
 
-            while(i < studnets.Length) 
+            while(i < nss.Length) 
             {
                 int temp = Convert.ToInt32(Console.ReadLine());
 
