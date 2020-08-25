@@ -36,6 +36,6 @@ public class goe_0825 {
 
         for(int i = 0; i < score_rating.length; i++)
             if(score_cnt[i] != 0)
-        System.out.println(((score_rating[i]/10)*10)+ ": " + score_cnt[i] + " person");
+            System.out.println(score_rating[i] + ": " + score_cnt[i] + " person");
     }
 }
