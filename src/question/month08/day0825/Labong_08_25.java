@@ -31,7 +31,7 @@ public class Labong_08_25 {
 				}
 			}
 		
-		for(Integer k=100; k>=0;k-=10) {
+		for(int k=100; k>=0;k-=10) {
 			for(int ele : map.keySet()){
 				if(k == ele && map.get(k) != 0 ) {	
 					System.out.println(ele + " : " + map.get(k) + "person");
