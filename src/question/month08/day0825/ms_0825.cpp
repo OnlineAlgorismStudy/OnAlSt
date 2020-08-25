@@ -3,8 +3,8 @@
 using namespace std;
 
 int main() {
-	int students[100], i = 0;
 	int nss[10] = { 0, }; // Number of Students by Score
+	int i = 0;
 
 	while (i < 100) {
 		int temp;
