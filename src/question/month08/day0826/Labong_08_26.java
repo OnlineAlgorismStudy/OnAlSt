@@ -13,8 +13,7 @@ public class Labong_08_26 {
 		
 		for(int i=0; i<4; i++) {
 			System.out.println(i+1 + "class? ");
-			for(int i2=0; i2<3; i2++) {
-				//ban[i][i2] = sc.nextInt();
+			for(int i2=0; i2<3; i2++) {				
 				count += sc.nextInt();
 			}
 			ban[i][0] = count;
