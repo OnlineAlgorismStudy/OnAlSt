@@ -5,16 +5,19 @@ const rl = readline.createInterface({
 });
 
 const getCapital = country => {
-  if (country === 1) console.log('Seoul');
-  else if (country === 2) console.log('Washington');
-  else if (country === 3) console.log('Tokyo');
-  else if (country === 4) console.log('Beijing');
+  if (country === 1) console.log('\nSeoul');
+  else if (country === 2) console.log('\nWashington');
+  else if (country === 3) console.log('\nTokyo');
+  else if (country === 4) console.log('\nBeijing');
   else {
-    console.log('none');
+    console.log('\nnone');
     rl.close();
   }
+  console.log();
+  rl.prompt();
 }
-
+rl.setPrompt("1. Korea\n2. USA\n3. Japan\n4. China\nnumber? ");
+rl.prompt();
 rl.on("line", function(line) {
   let num = parseInt(line);
   if (!isNaN(num)) {

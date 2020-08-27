@@ -11,7 +11,7 @@ const getAnimals = number => {
   else return "I don't know";
 }
 
-rl.on("line", function(line) {
+rl.question("Number? ", function(line) {
   let num = parseInt(line);
   if (!isNaN(num)) {
     console.log(getAnimals(num));
