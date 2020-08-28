@@ -7,8 +7,9 @@ const rl = readline.createInterface({
 rl.on("line", function(line) {
   line = parseInt(line);
   if (!isNaN(line)) {
-    for (let i = 0; i < line; i++) console.log("*".repeat(line-i));
-    for (let i = 0; i < line; i++) console.log("*".repeat(i+1));
+    let size = 2 * line - 1;
+    for (let i = 0; i < line; i++) console.log("*".repeat(size - (2*i)).padStart(size - i, ' ').padEnd(size, ' '));
+    for (let i = line-1; i > 0; i--) console.log("*".repeat(size - (2*(i-1))).padStart(size - i + 1, ' ').padEnd(size, ' '));
     rl.close();
   }
 })

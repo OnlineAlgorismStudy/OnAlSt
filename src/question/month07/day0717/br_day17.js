@@ -12,3 +12,7 @@ rl.on("line", function(line) {
     rl.close();
   }
 })
+
+rl.on("close", function() {
+  process.exit();
+})

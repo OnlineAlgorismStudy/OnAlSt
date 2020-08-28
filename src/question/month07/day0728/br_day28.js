@@ -4,11 +4,15 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
+
 rl.on("line", function(line) {
   line = parseInt(line);
   if (!isNaN(line)) {
-    for (let i = 0; i < line; i++) console.log("*".repeat(line-i));
-    for (let i = 0; i < line; i++) console.log("*".repeat(i+1));
+    let num = 1;
+    for (let i = 0; i < line; i++) {
+      let ary = Array.from({length: line-i}, (x, i) => num++%10);
+      console.log(ary.join(' ').padStart(2*line-1, ' '));
+    }
     rl.close();
   }
 })
