@@ -9,9 +9,7 @@ public class Labong_09_04 {
 		
 		for(int k=0; k<3; k++) {
 			for(int k2=0; k2<3; k2++) {
-				if(result == 0) {
-					result = num[k2];
-				}else if(result < num[k2]) {
+				if(result< num[k2]) {
 					result = num[k2];
 				}
 			} // for
