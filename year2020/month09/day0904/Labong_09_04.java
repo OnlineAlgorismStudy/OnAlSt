@@ -8,7 +8,7 @@ public class Labong_09_04 {
 		int result = 0;
 		
 		for(int k=0; k<3; k++) {			
-			if(result< num[k2]) { result = num[k]; }			
+			if(result< num[k]) { result = num[k]; }			
 		} // for 	
 		return result;
 	}
