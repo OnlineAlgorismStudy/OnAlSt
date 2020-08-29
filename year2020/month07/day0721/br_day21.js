@@ -10,11 +10,11 @@ let number = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
 const printStr = (type, cnt) => {
   let rtnStr = "";
   if (type === 'alphabet') {
-    rtnStr = alphabet.splice(0, cnt).join('');
-    alphabet = alphabet.concat(rtnStr.split(''));
+    rtnStr = alphabet.splice(0, cnt).join(' ');
+    alphabet = alphabet.concat(rtnStr.split(' '));
   } else if (type === 'number') {
-    rtnStr = number.splice(0, cnt).join('');
-    number = number.concat(rtnStr.split(''));
+    rtnStr = number.splice(0, cnt).join(' ');
+    number = number.concat(rtnStr.split(' '));
   }
   return rtnStr;
 }
@@ -22,7 +22,7 @@ const printStr = (type, cnt) => {
 rl.on("line", function(line) {
   line = parseInt(line);
   if (!isNaN(line) && line >=3 && line <= 10) {
-    for (let i = 0; i < line; i++) console.log(printStr('number', line-i) + printStr('alphabet', i+1));
+    for (let i = 0; i < line; i++) console.log(printStr('number', line-i) + ' ' + printStr('alphabet', i+1));
     rl.close();
   }
 })
