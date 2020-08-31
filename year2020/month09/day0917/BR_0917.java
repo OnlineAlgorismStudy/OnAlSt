@@ -1,10 +1,7 @@
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class BR_0917 {
 
-	private static List<List<Integer>> scores = new ArrayList<List<Integer>>();
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int size = sc.nextInt();
