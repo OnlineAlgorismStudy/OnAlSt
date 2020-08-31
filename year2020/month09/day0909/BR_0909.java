@@ -11,10 +11,10 @@ public class BR_0909 {
 		int temp1 = sc.nextInt();
 		int temp2 = sc.nextInt();
 		
-		while (temp1 < 2 || temp1 > 9) {
+		while (temp1 < 1 || temp1 > 10) {
 			temp1 = sc.nextInt();
 		}
-		while (temp2 < 2 || temp2 > 9) {
+		while (temp2 < 1 || temp2 > 10) {
 			temp2 = sc.nextInt();
 		}
 		
