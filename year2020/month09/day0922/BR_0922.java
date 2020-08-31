@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class BR_0922 {
 
-	final static int pow2(int a, int b) {
+	final static int POWER2(int a, int b) {
 		return (int) Math.pow(a-b,2);
 	}
-	final static int pow3(int a, int b) {
+	final static int POWER3(int a, int b) {
 		return (int) Math.pow(a+b, 3);
 	}
 	
@@ -15,9 +15,9 @@ public class BR_0922 {
 		int b = sc.nextInt();
 		sc.close();
 		
-		System.out.printf("(%d - %d) ^ 2 = %d", a, b, pow2(a,b));
+		System.out.printf("(%d - %d) ^ 2 = %d", a, b, POWER2(a,b));
 		System.out.println();
-		System.out.printf("(%d + %d) ^ 3 = %d", a, b, pow3(a,b));
+		System.out.printf("(%d + %d) ^ 3 = %d", a, b, POWER3(a,b));
 	}
 
 }
