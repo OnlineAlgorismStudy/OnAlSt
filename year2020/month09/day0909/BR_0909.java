@@ -10,6 +10,14 @@ public class BR_0909 {
 		
 		int temp1 = sc.nextInt();
 		int temp2 = sc.nextInt();
+		
+		while (temp1 < 2 || temp1 > 9) {
+			temp1 = sc.nextInt();
+		}
+		while (temp2 < 2 || temp2 > 9) {
+			temp2 = sc.nextInt();
+		}
+		
 		if (temp1 == temp2) listDan.add(temp1);
 		else {
 			listDan.add(Math.min(temp1, temp2));
