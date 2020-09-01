@@ -1,3 +1,5 @@
+package year2020.month09;
+
 public class BR_0910 {
 
 	public static void main(String[] args) {
