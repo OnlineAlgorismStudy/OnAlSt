@@ -2,15 +2,20 @@
 #include <string>
 using namespace std; 
 
+void print()
+{
+	string s = "~!@#$^&*()_+|";
+	cout<<s<<endl;
+}
+
 int main() {
 	
-	string s = "~!@#$^&*()_+|";
+	
 	int num;
 	scanf("%d", &num);
 
 	for(int i=0; i<num; i++)
 	{
-		cout<<s<<endl;
+		print();
 	}
 }
-
