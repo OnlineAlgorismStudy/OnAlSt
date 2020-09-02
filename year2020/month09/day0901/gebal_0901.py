@@ -1,1 +1,3 @@
-print("~!@#$^&*()_+|\n" * int(input()))
+def p:
+  print("~!@#$^&*()_+|\n" * int(input()))
+p()
