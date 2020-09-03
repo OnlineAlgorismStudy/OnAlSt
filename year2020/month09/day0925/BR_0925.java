@@ -22,13 +22,16 @@ public class BR_0925 {
 		 * **************************************************/
 		Scanner sc = new Scanner(System.in);
 		
-		int sqr = sc.nextInt();
-		while (sqr < 1 || sqr > 20) sqr = sc.nextInt();
+		int pow = sc.nextInt();
+		while (pow < 1 || pow > 20) pow = sc.nextInt();
 		
 		sc.close();
 		
-		System.out.println((int) Math.pow(2, sqr));
-		
+		System.out.println(getPowerdNum(2, pow));
+	}
+	
+	private static int getPowerdNum(int num, int pow) {
+		return (int) Math.pow(num, pow);
 	}
 
 }
