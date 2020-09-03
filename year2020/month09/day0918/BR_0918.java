@@ -29,8 +29,15 @@ public class BR_0918 {
 		float d = sc.nextFloat();
 		sc.close();
 		
-		System.out.println(Math.max(Math.abs(a), Math.abs(b)) == Math.abs(a) ? a : b);
-		System.out.println(String.format("%.2f", Math.min(Math.abs(c), Math.abs(d)) == Math.abs(c) ? c : d));
+		System.out.println(getMax(a, b));
+		System.out.println(getAbsMax(c, d));
+	}
+	
+	private static int getMax(int a, int b) {
+		return Math.max(Math.abs(a), Math.abs(b)) == Math.abs(a) ? a : b;
+	}
+	private static String getAbsMax(float a, float b) {
+		return String.format("%.2f", Math.min(Math.abs(a), Math.abs(b)) == Math.abs(a) ? a : b);
 	}
 
 }
