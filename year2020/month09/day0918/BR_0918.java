@@ -36,7 +36,7 @@ public class BR_0918 {
 	private static int getMax(int a, int b) {
 		return Math.max(Math.abs(a), Math.abs(b)) == Math.abs(a) ? a : b;
 	}
-	private static String getAbsMax(float a, float b) {
+	private static String getAbsMin(float a, float b) {
 		return String.format("%.2f", Math.min(Math.abs(a), Math.abs(b)) == Math.abs(a) ? a : b);
 	}
 
