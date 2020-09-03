@@ -35,6 +35,11 @@ public class BR_0921 {
 		}
 		sc.close();
 		
+		printSortSteps(ary);
+		
+	}
+	
+	private static void printSortSteps(int[] ary) {
 		for (int i = 0; i < 9; i++) {
 			for (int j = 0; j < 9-i; j++) {
 				if (ary[j] < ary [j+1]) {
@@ -50,5 +55,4 @@ public class BR_0921 {
 			System.out.println(step.trim());
 		}
 	}
-
 }
