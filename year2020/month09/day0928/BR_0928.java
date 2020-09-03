@@ -31,9 +31,14 @@ public class BR_0928 {
 		
 		sc.close();
 
-		System.out.println(Math.round((a+b+c)/3));
-		System.out.println(Math.round((Math.round(a)+Math.round(b)+Math.round(c))/(float)3));
+		System.out.println(roundTotalAvg(a, b, c));
+		System.out.println(roundEachAvg(a, b, c));
 	}
 	
-	
+	private static int roundTotalAvg(float a, float b, float c) {
+		return (int) Math.round((a+b+c)/3);
+	}
+	private static int roundEachAvg(float a, float b, float c) {
+		return (int) Math.round((Math.round(a)+Math.round(b)+Math.round(c))/(float)3);
+	}
 }
