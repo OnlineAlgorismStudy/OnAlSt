@@ -22,15 +22,23 @@ public class BR_0924 {
 		 * **************************************************/
 		Scanner sc = new Scanner(System.in);
 		
-		int result = 0;
+		int[] ary = new int[5];
 		for (int i = 0; i < 5; i++) {
-			result += (int) Math.abs(sc.nextInt());
+			ary[i] = (int) sc.nextInt();
 		}
 		
 		sc.close();
 		
-		System.out.println(result);
+		System.out.println(addAbs(ary));
 		
+	}
+	
+	private static int addAbs(int[] ary) {
+		int result = 0;
+		for (int num : ary) {
+			result += (int) Math.abs(num);
+		}
+		return result;
 	}
 
 }
