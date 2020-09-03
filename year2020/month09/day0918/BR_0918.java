@@ -30,7 +30,7 @@ public class BR_0918 {
 		sc.close();
 		
 		System.out.println(getMax(a, b));
-		System.out.println(getAbsMax(c, d));
+		System.out.println(getAbsMin(c, d));
 	}
 	
 	private static int getMax(int a, int b) {
