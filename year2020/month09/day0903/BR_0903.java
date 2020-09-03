@@ -32,16 +32,17 @@ public class BR_0903 {
 		while (size >= 100) {
 			size = sc.nextInt();
 		}
-
+		printSquare(size);
 		sc.close();
-
+	}
+	
+	private static void printSquare(int size) {
 		int i = 0;
 		while (i < size*size) {
 			System.out.print(++i);
 			if (i % size == 0) System.out.println();
 			else System.out.print(" ");
 		}
-
 	}
 
 }
