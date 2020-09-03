@@ -32,6 +32,16 @@ public class BR_0929 {
 		
 		sc.close();
 
+		numbers = sort3(numbers);
+		
+		String result = "";
+		for (int number : numbers) {
+			result += number + " ";
+		}
+		System.out.println(result.trim());
+	}
+	
+	private static int[] sort3 (int[] numbers) {
 		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < CNT-1-i; j++) {
 				if (numbers[j] > numbers[j+1]) {
@@ -41,13 +51,6 @@ public class BR_0929 {
 				}
 			}
 		}
-		
-		String result = "";
-		for (int number : numbers) {
-			result += number + " ";
-		}
-		System.out.println(result.trim());
+		return numbers;
 	}
-	
-	
 }
