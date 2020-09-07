@@ -14,4 +14,7 @@ mylist = input('').split()
 for i in range(len(mylist)):
     mylist[i] = int(mylist[i])
 
-print(max(mylist[0], mylist[1], mylist[2]))
+def Max(mylist):
+    print(max(mylist[0], mylist[1], mylist[2]))
+
+Max(mylist)
