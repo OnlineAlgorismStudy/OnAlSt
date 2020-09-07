@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace algorithm_51
 {
@@ -15,10 +15,20 @@ namespace algorithm_51
         static void Main(string[] args)
         {
             string[] input = Console.ReadLine().Split(' ');
-            int num = Convert.ToInt32(input[0]);
-            int count = Convert.ToInt32(input[1]);
+            int[] data = new int[2] { 11, 11 };
+            int i = 0;
+
+            foreach(var value in input) {
+                int temp = Convert.ToInt32(value);
+
+                if(temp <= 10)
+                    data[i] = temp;
+                i++;
+            }
             
-            Console.Write(Power(num, count));
+            if(data[0] != 11 && data[1] != 11) {
+                Console.Write(Power(data[0], data[1]));
+            }
         }
     }
 }
