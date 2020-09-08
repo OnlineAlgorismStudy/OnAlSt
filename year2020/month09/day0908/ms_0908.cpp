@@ -5,7 +5,7 @@ using namespace std;
 void changeValue(int* pointer);
 
 int main() {
-	// data[0] ÀÌ ÀÛÀº ¼ö, data[1] ÀÌ Å« ¼ö¸¦ ÀúÀå
+	// data[0] ì´ ì‘ì€ ìˆ˜, data[1] ì´ í° ìˆ˜ë¥¼ ê°€ì§„ë‹¤.
 	int data[2];
 
 	for (int i = 0; i < 2; i++)
