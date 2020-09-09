@@ -1,7 +1,7 @@
 #찐구 0910 문제풀이
 
 def tornado():
-    print("@@@@@@@@@@")
+    print("@"*10)
     
 print("first")
 tornado()
