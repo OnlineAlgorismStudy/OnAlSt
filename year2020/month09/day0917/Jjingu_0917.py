@@ -11,9 +11,6 @@ def input_array(n):
                
     return array
 
-def print_array(array):
-    [print(array[i],end =' ') for i in range(0,n)]
-
 n = int(input())
 array = input_array(n)
-print_array(array)
+print(*array)
