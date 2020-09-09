@@ -21,6 +21,7 @@ public class Labong_09_09 {
 		for(int i=0; i<2;i++) {
 			num[i] = sc.nextInt();
 		}
+		Arrays.sort(num);
 		gogodan(num);
 	}
 
