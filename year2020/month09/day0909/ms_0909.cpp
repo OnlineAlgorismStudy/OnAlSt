@@ -10,6 +10,12 @@ int main() {
 	for (int i = 0; i < 2; i++)
 		scanf_s("%d", &data[i]);
 
+	if (data[0] > data[1]) {
+		int temp = data[0];
+		data[0] = data[1];
+		data[1] = temp;
+	}
+
 	MultTable(data);
 
 	return 0;
