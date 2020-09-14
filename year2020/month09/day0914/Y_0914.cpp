@@ -4,11 +4,8 @@
 #include <string>
 using namespace std;
 
-int main(int argc, const char * argv[]) {
-    
-    int n;
-    scanf("%d", &n);
-    
+void print(int n)
+{
     for(int i=1; i<=n; i++)
     {
         for(int j=1; j<=n; j++)
@@ -17,5 +14,13 @@ int main(int argc, const char * argv[]) {
         }
         printf("\n");
     }
+}
+
+int main(int argc, const char * argv[]) {
+    
+    int n;
+    scanf("%d", &n);
+    
+    print(n);
     return 0;
 }
