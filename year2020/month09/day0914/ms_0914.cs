@@ -24,7 +24,8 @@ namespace algorithm_56
         {
             int n = Convert.ToInt32(Console.ReadLine());
 
-            printRec(n);
+            if(1 <= n && n <= 100)
+                printRec(n);
         }
     }
 }
