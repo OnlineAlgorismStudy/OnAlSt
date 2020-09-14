@@ -4,13 +4,10 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-const range = (start, end) => {
-  let arr = [];
-  for (let i = start; i <= end; i++) {
-    arr.push(i);
-  }
-  return arr;
-};
+const range = (start, end) =>
+  Array(end - start + 1)
+    .fill()
+    .map((_, idx) => start + idx);
 
 const print = (min, max) => {
   range(min, max).map((num) => {
