@@ -6,7 +6,6 @@ const rl = readline.createInterface({
 
 let aryresult = [];
 let tmpary = [];
-let cnt = 0;
 
 function printAvgs(ary) {
   let col = [0, 0];
