@@ -19,9 +19,13 @@ public class bangJjo_1001 {
 	
 	public static void recursive(int num) {
 		
-		for(int i = 0; i < num; i++) {
+		if(num == 0) {
+			return;
+		}else {
 			System.out.println("recursive");
-		} // end for
+			num--;
+			recursive(num);
+		} // end if
 		
 	} // recursive
 
