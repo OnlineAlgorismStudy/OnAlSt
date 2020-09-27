@@ -1,7 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <cmath>
-#define PI 3.141592
 using namespace std;
 int print(int n);
 
