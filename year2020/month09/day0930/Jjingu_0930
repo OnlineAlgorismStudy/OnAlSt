@@ -1,0 +1,8 @@
+# 찐구 0930 문제풀이
+
+def area_circle(r):
+    circle_pi = 3.141592
+    print(round(circle_pi*r**2,3))
+    
+r = float(input('radius : '))
+area_circle(r)
