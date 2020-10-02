@@ -39,9 +39,9 @@ namespace samdasu_0916
                 int result = 0;
                 for (int j = 0; j < 3; j++)
                 {
-                    result += vs[i, j];
+                    result += vs[j,i];
                 }
-                vs[3, 3] = result;
+                vs[3, i] = result;
 
                 sub_result += result;
                 vs[3, 3] = sub_result;
@@ -51,7 +51,7 @@ namespace samdasu_0916
             {
                 for (int j = 0; j < 4; j++)
                 {
-                    Console.WriteLine(vs[i, j] + " ");
+                    Console.Write(vs[i, j] + " ");
                 }
                 Console.WriteLine(" ");
             }
