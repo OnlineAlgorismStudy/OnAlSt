@@ -1,0 +1,28 @@
+package study;
+
+import java.util.Scanner;
+
+public class st1009 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num1 = sc.nextInt();
+		recur(num1);
+	}
+	public static void recur(int num1) {
+		if(num1 % 2 == 0) { //짝수
+			if(num1 < 2) {
+				return;
+			}
+			recur(num1 - 2);
+			System.out.print(num1+" ");
+		}else {//홀수
+			if(num1 < 1) {
+				return;
+			}
+			recur(num1 -2);
+			System.out.print(num1 + " ");
+		}
+	}
+
+}
