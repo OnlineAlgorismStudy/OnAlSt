@@ -1,16 +1,13 @@
 #include<stdio.h>
 
-void calc(int n) {
-	int tmp = 1;
-	while (n > 0) {
-		tmp *= (n % 10) > 0 ? n % 10 : 1;
-		n /= 10;
-	}
-	printf("%d", tmp);
+int calc(int n) {
+	int mul = n % 10 > 0 ? n % 10 : 1;
+	if (n > 0) return mul * calc(n / 10);
+	else return mul;
 }
 
 int main() {
 	int a, b, c;
 	scanf("%d %d %d", &a, &b, &c);
-	calc(a * b * c);
+	printf("%d", calc(a * b * c));
 }
