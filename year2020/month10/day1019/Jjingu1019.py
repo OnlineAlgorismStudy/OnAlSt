@@ -2,7 +2,7 @@
 
 repeat = True
 while repeat:
-    n = int(input())
+    n = int(input("ASCII code = ?"))
     if 33<=n and n<=127:
         print(chr(n))
     else:
