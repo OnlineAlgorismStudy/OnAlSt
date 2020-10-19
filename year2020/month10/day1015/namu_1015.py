@@ -5,5 +5,5 @@ def recur(n):
         return int(str(n)[:1]) * recur(int(str(n)[1:]))
 
 
-n = int(input())
-print(recur(n))
+a, b, c = map(int, input().split())
+print(recur(a * b * c))
