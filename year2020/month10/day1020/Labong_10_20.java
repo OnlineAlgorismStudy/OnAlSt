@@ -10,7 +10,7 @@ public class Labong_10_20 {
 		
 		String m = sc.next();
 		
-		System.out.println(m.length() <=100 ? "":"10이하의 수를 입력해주십시오.");
+		System.out.println(m.length() <=100 ? "":"100이하의 수를 입력해주십시오.");
 		
 		System.out.println(m+m);
 		
