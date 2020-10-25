@@ -15,5 +15,11 @@ public class Labong_10_26 {
 		System.out.print(scan >= 65 && scan <= 90 ? scan : "");
 		
 		System.out.print(scan >= 97 && scan <= 122 ? scan : "");
+		
+		if(!(scan >= 48 && scan <= 57) || 
+		    (scan >= 65 && scan <= 90) ||
+		    (scan >= 97 && scan <= 122)) 
+			break;
+			
 	}
 }
