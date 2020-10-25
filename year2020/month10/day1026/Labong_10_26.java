@@ -9,7 +9,8 @@ public class Labong_10_26 {
 		Scanner sc = new Scanner(System.in);
 		
 		char scan = sc.next().charAt(0);
-	
+		while(true){
+		
 		System.out.print(scan >= 48 && scan <= 57 ? scan : "");
 		
 		System.out.print(scan >= 65 && scan <= 90 ? scan : "");
@@ -20,6 +21,7 @@ public class Labong_10_26 {
 		    (scan >= 65 && scan <= 90) ||
 		    (scan >= 97 && scan <= 122)) 
 			break;
-			
+		}
+		sc.close();
 	}
 }
