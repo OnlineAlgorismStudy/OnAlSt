@@ -1,4 +1,4 @@
-Jjingu 1027 Solution
+#Jjingu 1027 Solution
 
 mystring = input()
 trans = ""
