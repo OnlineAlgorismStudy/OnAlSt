@@ -1,4 +1,4 @@
- 찐구 1026 문제풀이
+ #찐구 1026 문제풀이
 
 repeat = True
 while repeat:
