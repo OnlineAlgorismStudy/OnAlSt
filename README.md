@@ -35,9 +35,6 @@
 <a href="https://github.com/Ellimis">
     <img src="https://avatars3.githubusercontent.com/u/67461878?s=460&u=b197df3ac81865ed8c39f026b378ca0e5a96ba9d&v=4" title="Ellimis" width="70" height="70">
 </a>
-<a href="https://github.com/kimxoals">
-    <img src="https://avatars2.githubusercontent.com/u/66377873?s=460&u=ca8c2d91823f92c4c17752899d164ffe14a93762&v=4" title="kimxoals" width="70" height="70">
-</a>
 <a href="https://github.com/dbdudrb000">
     <img src="https://avatars3.githubusercontent.com/u/65213623?s=460&u=54a08f0deece470c593112cb9e2925974ef8934c&v=4" title="dbdudrb000" width="70" height="70">
 </a>
