@@ -7,6 +7,11 @@ public class goe_1029 {
 
         String str = sc.next();
 
+        while (str.trim().length() > 100){
+           System.out.println("100글자 이하의 문자열을 입력하시오");
+           str = sc.next();
+        }
+        
         String[] words = str.split("");
 
         int num = str.length()-1;
