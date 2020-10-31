@@ -1,0 +1,12 @@
+#찐구 1105 문제풀이
+
+count = 0
+mylist = []
+while count < 5:
+    word = input()
+    mylist.append(word)
+    count +=1
+
+for i in range(5):
+    print(mylist[4-i])
+    
