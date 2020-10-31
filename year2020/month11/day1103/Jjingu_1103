@@ -1,0 +1,13 @@
+#찐구 1103 문제풀이
+
+myword = input()
+length = len(myword)
+while length>1:
+    num = int(input())
+    if num>length:
+        myword -= myword[-1]
+    else:
+        myword = myword[:num-1] + myword[num:]
+    
+    print(myword)
+    length = len(myword)
