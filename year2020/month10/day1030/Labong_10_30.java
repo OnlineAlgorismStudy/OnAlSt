@@ -10,12 +10,12 @@ public class Labong_10_30 {
 		String str;
 		
 		while(true) {
-			str = sc.nextLine().replaceAll("[^0-9a-zA-Z]", "");
+			str = sc.nextLine();
 			
 			if(str.length() >100) {
 				str = "";
 			}else {
-				str = str.toLowerCase();
+				str = str.toLowerCase().replaceAll("[^0-9a-zA-Z]", "");
 				break;
 			}
 		}
