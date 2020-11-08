@@ -14,7 +14,7 @@ int main() {
 	return 0;
 }
 
-// string »ç¿ë
+// string ì‚¬ìš©
 void ex_01() {
 	string input;
 
@@ -26,7 +26,7 @@ void ex_01() {
 	cout << input << endl;
 }
 
-// strcat_s »ç¿ë
+// strcat_s ì‚¬ìš©
 void ex_02() {
 	char input[30];
 
