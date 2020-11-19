@@ -14,7 +14,7 @@ int main() {
 		data = new string[n];
 		string temp;
 
-		// ¿£ÅÍ °ª Ã³¸®!
+		// ì—”í„° ê°’ ì²˜ë¦¬!
 		getline(cin, temp);
 
 		for (int i = 0; i < n; i++) {
