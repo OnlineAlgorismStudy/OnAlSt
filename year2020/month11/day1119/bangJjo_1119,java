@@ -1,0 +1,40 @@
+
+import java.util.Scanner;
+
+public class bangJjo_1119 {
+
+	public static void main(String args[]) {
+
+		Scanner sc = new Scanner(System.in);
+
+		StringBuilder sb = new StringBuilder();
+
+		int count = 0;
+
+		while (true) {
+
+			String input = sc.nextLine();
+
+			if (input.equals("0"))
+
+				break;
+
+			count++;
+
+			if (count % 2 == 1) {
+
+				sb.append(input + "\n");
+
+			} // end if
+ 
+		} // end while
+		
+		sc.close();
+		
+		System.out.println(count);
+
+		System.out.println(sb);
+
+	} // main
+
+} // class
