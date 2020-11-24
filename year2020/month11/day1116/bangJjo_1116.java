@@ -1,5 +1,3 @@
-package jungwoon;
-
 import java.util.Scanner;
 
 public class Main1116 {
