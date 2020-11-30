@@ -10,11 +10,11 @@ public class Labong_11_18 {
 		String str = sc.next();
 		String[] strArr = {"flower","rose","lily","daffodil","azalea"};
 		int count = 0;
-		for(int i=0; i<strArr.length;i++){
-			if(strArr[i].contains(str)){
-				System.out.println(strArr[i]);
-				count++;
-			}
+		boolean use = false;
+		
+		for(int j=0; j<strArr.length; j++) {
+			use = strArr[j].substring(1,3).contains(str);
+			if(use) { System.out.println(strArr[j]); count++;}
 		}
 		System.out.println(count);
 	}
