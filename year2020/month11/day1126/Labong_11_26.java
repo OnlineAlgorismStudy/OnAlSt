@@ -12,7 +12,7 @@ public class Labong_11_26 {
 		double jNum = sc.nextDouble();
 		String str = sc.next();
 		
-		str = num+""+jNum+""+str.replaceAll(" ","");
+		str = (num+""+jNum+""+str).replaceAll(" ","");
 		num = str.length();
 		
 		for(int i=0; i<num; i++) {
