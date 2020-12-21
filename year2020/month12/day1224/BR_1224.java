@@ -26,7 +26,6 @@ class Solution {
         	answer +="*";
         }
         answer += phone_number.substring(phone_number.length()-4);
-        System.out.println(answer);
         return answer;
     }
 }
