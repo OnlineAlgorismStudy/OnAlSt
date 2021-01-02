@@ -21,7 +21,7 @@ class Solution {
 			
 	    	System.out.println(set);
 	    	List<Integer> list = new ArrayList<Integer>(set);
-
+		Collections.sort(list);
 	    	int[] arr = new int[list.size()];
 	    	
 	    	for(int i=0; i<list.size(); i++) {
