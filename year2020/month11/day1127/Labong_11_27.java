@@ -28,6 +28,6 @@ class Solution {
 	    		arr[i] = list.get(i);
 	    	}
 	    	return arr;
-	    }
+	    } 
     
 }
