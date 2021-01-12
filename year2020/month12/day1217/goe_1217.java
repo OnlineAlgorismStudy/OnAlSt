@@ -16,6 +16,7 @@ public class goe_1217 {
     }
 
     public static void main(String[] args) {
+        
         solution(121);
     }
 }
