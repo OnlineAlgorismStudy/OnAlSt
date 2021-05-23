@@ -1,43 +1,85 @@
 # This is a basic workflow to help you get started with Actions
+name: Firebase
 
-name: file_check
-
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
+# Run this workflow every time a new commit pushed to your repository
 on:
   push:
-    branches: [master]
-  pull_request:
-    branches: [master]
+    branches: [ master ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
+    env:
+      working-directory: ./functions
+
+    strategy:
+      matrix:
+        node-version: [ 12.x ]
+
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - id: file_changes
-        uses: trilom/file-changes-action@v1.2.3
-        with:
-          output: ","
-      - id: current-time
-        uses: 1466587594/get-current-time@v1
-        with:
-          format: YYYY-MM-DD
-          utcOffset: "+09:00"
       - uses: actions/checkout@v2
-      - name: test
-        run: |
-          curl -G "https://us-central1-oasm-889a7.cloudfunctions.net/message" --data-urlencode "files=${{ steps.file_changes.outputs.files_added }}" --data-urlencode "name=${{ github.event.sender.html_url }}" --data-urlencode "message=${{ github.event.commits[0].message }}" --data-urlencode "date=${{ steps.current-time.outputs.formattedTime }}"
-          echo '${{ steps.file_changes.outputs.files }}'
-          echo '${{ steps.file_changes.outputs.files_added}}'
-          echo '${{ steps.file_changes.outputs.files_modified}}'
-          echo '${{ github.event.sender.html_url }}'
-          echo '${{ github.event.commits[0].author.name }}'
-          echo '${{ github.event.commits[0].author.email }}'
-          echo '${{ github.event.commits[0].message }}'
-          echo '${{ steps.current-time.outputs.formattedTime }}'
+      - name: Use Node.js ${{ matrix.node-version }}
+
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: install libraries
+        run: npm install
+        working-directory: ${{env.working-directory}}
+
+      - name: install firebase
+        run: npm i firebase-tools -g
+
+      - name: deploy
+        run: firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
+
+## This is a basic workflow to help you get started with Actions
+#
+#name: file_check
+#
+## Controls when the action will run. Triggers the workflow on push or pull request
+## events but only for the master branch
+#on:
+#  push:
+#    branches: [master]
+#  pull_request:
+#    branches: [master]
+#
+## A workflow run is made up of one or more jobs that can run sequentially or in parallel
+#jobs:
+#  # This workflow contains a single job called "build"
+#  build:
+#    # The type of runner that the job will run on
+#    runs-on: ubuntu-latest
+#
+#    # Steps represent a sequence of tasks that will be executed as part of the job
+#    steps:
+#      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+#      - id: file_changes
+#        uses: trilom/file-changes-action@v1.2.3
+#        with:
+#          output: ","
+#      - id: current-time
+#        uses: 1466587594/get-current-time@v1
+#        with:
+#          format: YYYY-MM-DD
+#          utcOffset: "+09:00"
+#      - uses: actions/checkout@v2
+#      - name: test
+#        run: |
+#          curl -G "https://us-central1-oasm-889a7.cloudfunctions.net/message" --data-urlencode "files=${{ steps.file_changes.outputs.files_added }}" --data-urlencode "name=${{ github.event.sender.html_url }}" --data-urlencode "message=${{ github.event.commits[0].message }}" --data-urlencode "date=${{ steps.current-time.outputs.formattedTime }}"
+#          echo '${{ steps.file_changes.outputs.files }}'
+#          echo '${{ steps.file_changes.outputs.files_added}}'
+#          echo '${{ steps.file_changes.outputs.files_modified}}'
+#          echo '${{ github.event.sender.html_url }}'
+#          echo '${{ github.event.commits[0].author.name }}'
+#          echo '${{ github.event.commits[0].author.email }}'
+#          echo '${{ github.event.commits[0].message }}'
+#          echo '${{ steps.current-time.outputs.formattedTime }}'
